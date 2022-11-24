@@ -27,6 +27,9 @@ output:
   culture:
   - 'en-US'
 
+execution:
+  notProcessedWarning: false
+
 input:
   pathIgnore:
 
