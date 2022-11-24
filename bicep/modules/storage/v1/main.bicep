@@ -44,7 +44,7 @@ resource storageAccount 'Microsoft.Storage/storageAccounts@2019-06-01' = {
       ipRules: []
       defaultAction: 'Deny'
     }
-    supportsHttpsTrafficOnly: false
+    supportsHttpsTrafficOnly: true
     accessTier: 'Hot'
     allowBlobPublicAccess: allowBlobPublicAccess
     minimumTlsVersion: 'TLS1_2'
@@ -60,11 +60,11 @@ resource blobServices 'Microsoft.Storage/storageAccounts/blobServices@2019-06-01
       corsRules: []
     }
     deleteRetentionPolicy: {
-      enabled: false
+      enabled: true
       days: 7
     }
     containerDeleteRetentionPolicy: {
-      enabled: false
+      enabled: true
       days: 7
     }
   }
