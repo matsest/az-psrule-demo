@@ -58,3 +58,7 @@ suppression:
   - kvtest001
   Azure.Storage.BlobPublicAccess:
   - sttest001
+  Azure.KeyVault.Firewall:
+  - kvtest001
+  - kvtest002
+  - kv-bicep-app-002
